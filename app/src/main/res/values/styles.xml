@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/baron_blueDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <!--<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <!--<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <!--<style name="green_button" parent="TextAppearance.AppCompat.Button">-->
+    <style name="green_button" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/radius_green</item>
+    </style>
+
+
+    <!--<style name="DialogStyle" parent="Theme.Design.Light.BottomSheetDialog">-->
+    <style name="DialogStyle" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="default_blue_button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/new_colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/ts18</item>
+    </style>
+
+    <style name="default_green_button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/new_colorAccentDark</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/ts18</item>
+    </style>
+
+    <style name="normal_editText">
+        <item name="android:textColor">@color/new_textColor</item>
+        <item name="android:textColorHint">@color/new_textGrey</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/ts13</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">30dp</item>
+    </style>
+
+    <style name="confirm_sms" parent="normal_editText">
+        <item name="android:maxLength">1</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textSize">@dimen/ts12</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:background">@color/new_textGrey</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:textColor">@color/new_colorAccentDark</item>
+    </style>
+</resources>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="8dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/relLayUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false">
+
+        <ImageView
+            android:id="@+id/ivProfileImage"
+            android:layout_width="@dimen/h40"
+            android:layout_height="@dimen/h40"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="false"
+            android:clickable="true"
+            android:src="@drawable/ic_account_circle"
+            android:tint="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:id="@+id/lUserIdentification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toStartOf="@+id/ivProfileImage"
+            android:gravity="right">
+
+            <ir.brn.driver.util.widgets.PersianTextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="right|center"
+                android:text="tvUserName"
+                android:textColor="@color/baron_blueMediumLight"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ir.brn.driver.util.widgets.PersianTextView
+                android:id="@+id/tvScreenName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tvUserName"
+                android:layout_marginLeft="6dp"
+                android:ellipsize="end"
+                android:text="\@"
+                android:textColor="@color/baron_black"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <ir.brn.driver.util.widgets.PersianTextView
+            android:id="@+id/tvBodyD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="17dp"
+            android:layout_toStartOf="@+id/ivProfileImage"
+            android:autoLink="all"
+            android:clickable="true"
+            android:text="tvBody"
+            android:textColor="@color/baron_black"
+            android:textDirection="rtl"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/ivTweetedImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBodyD"
+            android:layout_toEndOf="@+id/ivProfileImage"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/relLayButtons"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/relLayUser"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:adjustViewBounds="false"
+                android:background="#00000000"
+                android:tint="@color/colorPrimaryDark"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_delete_black_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:adjustViewBounds="false"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:tint="@color/colorPrimaryDark"
+                android:src="@drawable/ic_mode_edit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivDisLike"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:adjustViewBounds="false"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_thumb_down" />
+
+            <ir.brn.driver.util.widgets.PersianTextView
+                android:id="@+id/tvRetweets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h16"
+                android:text="۰"
+                android:textColor="@color/baron_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivLoveTweet"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:adjustViewBounds="false"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_thumb_up" />
+
+            <ir.brn.driver.util.widgets.PersianTextView
+                android:id="@+id/tvLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h16"
+                android:text="۰"
+                android:textColor="@color/baron_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <ir.brn.driver.util.widgets.PersianTextView
+                android:id="@+id/tvCreatedAtD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center|right"
+                android:text="tvCreatedAt"
+                android:textAllCaps="true"
+                android:textColor="@color/baron_black"
+                android:textSize="10sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vtSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relLayButtons"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimaryDark" />
+
+</RelativeLayout>
+

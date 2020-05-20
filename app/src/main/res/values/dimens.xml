@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_width">270dp</dimen>
+
+    <dimen name="ts12">12sp</dimen>
+    <dimen name="ts13">13sp</dimen>
+    <dimen name="ts14">14sp</dimen>
+    <dimen name="ts15">15sp</dimen>
+    <dimen name="ts16">16sp</dimen>
+    <dimen name="ts17">17sp</dimen>
+    <dimen name="ts18">18sp</dimen>
+    <dimen name="ts19">19sp</dimen>
+    <dimen name="ts20">20sp</dimen>
+
+
+    <dimen name="h8">8dp</dimen>
+    <dimen name="h12">12dp</dimen>
+    <dimen name="h16">16dp</dimen>
+    <dimen name="h20">20dp</dimen>
+    <dimen name="h24">24dp</dimen>
+    <dimen name="h28">28dp</dimen>
+    <dimen name="h32">32dp</dimen>
+    <dimen name="h36">36dp</dimen>
+    <dimen name="h40">40dp</dimen>
+    <dimen name="h44">44dp</dimen>
+    <dimen name="h48">48dp</dimen>
+    <dimen name="h52">52dp</dimen>
+    <dimen name="h56">56dp</dimen>
+    <dimen name="h60">60dp</dimen>
+    <dimen name="h68">68dp</dimen>
+    <dimen name="h76">676dp</dimen>
+
+</resources>

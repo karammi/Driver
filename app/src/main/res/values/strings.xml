@@ -1,0 +1,13 @@
+<resources>
+
+
+
+    <string name="packages">بسته بندی</string>
+    <string name="loadDate">تاریخ بارگیری</string>
+    <string name="dischargingDate">تاریخ تحویل</string>
+    <string name="selectAddress">لطفا یکی از آدرس های خود را انتخاب نمایید</string>
+
+    <string name="messages">پیام های شما</string>
+
+
+</resources>

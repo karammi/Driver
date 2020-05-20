@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_login"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ir.brn.driver.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/toConfirmFragment"
+            app:destination="@id/confirmFragment"
+            app:enterAnim="@anim/translate_in_up"
+            app:exitAnim="@anim/translate_out_up"
+            app:popEnterAnim="@anim/translate_in_down"
+            app:popExitAnim="@anim/translate_out_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmFragment"
+        android:name="ir.brn.driver.login.ConfirmFragment"
+        android:label="ConfirmFragment"
+        tools:layout="@layout/fragment_confirm">
+        <argument
+            android:name="cellPhone"
+            app:argType="string"
+            android:defaultValue="09123651583" />
+    </fragment>
+</navigation>

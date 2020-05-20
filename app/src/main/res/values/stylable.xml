@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomViewFont" >
+        <attr name="mcv_font" format="enum">
+            <enum name="IranSans" value="1"/>
+            <enum name="IranSansBold" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>
